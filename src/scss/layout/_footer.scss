@@ -1,8 +1,25 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 465px;
+  color: white;
+  background-color: #304268;
+  font-family: "Roboto", sans-serif;
+
+  &__icon {
+  }
+
+  &__menu {
+    width: 73px;
+    height: 150px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__bottom {
+    font-size: 14px;
+    padding: 15px;
+  }
 }

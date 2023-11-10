@@ -1,8 +1,9 @@
 .footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 320px;
   height: 465px;
   color: white;
@@ -10,6 +11,9 @@
   font-family: "Roboto", sans-serif;
 
   &__icon {
+    position: relative;
+    top: -40px;
+    align-items: center;
   }
 
   &__menu {
@@ -17,6 +21,15 @@
     height: 150px;
     font-size: 16px;
     line-height: 30px;
+
+    &__articles {
+      list-style: none;
+      margin: 0 auto;
+    }
+
+    &__ssnn {
+      list-style: none;
+    }
   }
   &__bottom {
     font-size: 14px;

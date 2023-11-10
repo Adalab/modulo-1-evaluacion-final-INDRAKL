@@ -1,0 +1,41 @@
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 320px;
+  height: 624px;
+  background-color: #eff9ff;
+
+  &__title {
+    font-size: 24px;
+    grid-column: span 3;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__article {
+    grid-column: span 3;
+    text-align: center;
+  }
+  &__button {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+
+    &__details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #f26002;
+      border-radius: 22.5px;
+      width: 180px;
+      height: 45px;
+      font-size: 20px;
+    }
+  }
+}

@@ -12,11 +12,20 @@
 
   &__icon {
     position: relative;
-    top: -40px;
-    align-items: center;
+    top: -50px;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
   }
 
   &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 73px;
     height: 150px;
     font-size: 16px;
@@ -24,7 +33,6 @@
 
     &__articles {
       list-style: none;
-      margin: 0 auto;
     }
 
     &__ssnn {

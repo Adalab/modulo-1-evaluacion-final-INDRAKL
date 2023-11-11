@@ -2,7 +2,8 @@
 
 # Ejercicio de evaluación final del módulo 1 de Indra Kishinchand López.
 
-El presente ejercicio ha sido desarrollado de acuerdo a un diseñado dado. A partir del mismo se ha resuelto el enunciado utilizando:
+El presente ejercicio ha sido desarrollado de acuerdo a un diseñado dado.
+A partir del mismo se ha resuelto el enunciado utilizando:
 
 - Sass.
 - Flexbox y CSS Grid.

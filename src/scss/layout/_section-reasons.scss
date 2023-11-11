@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 320px;
   height: 624px;
-  background-color: #eff9ff;
+  background-color: $ice-blue;
   text-align: center;
 
   &__title {
@@ -33,13 +33,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: $white;
       background-color: $bright-orange;
       border-radius: 22.5px;
       width: 180px;
       height: 45px;
       font-size: 20px;
       font-family: $font-medium;
+
+      &__link {
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 }

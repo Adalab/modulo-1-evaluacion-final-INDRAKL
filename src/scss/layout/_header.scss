@@ -6,16 +6,10 @@
 
 .header {
   text-align: center;
-  width: 320px;
-  height: 568px;
-  background-color: #eff9ff;
-
-  &__background {
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-  }
+  height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
 
   &__text {
     display: flex;
@@ -25,7 +19,7 @@
     top: 284px;
     font-size: 42px;
     font-family: $font-bold;
-    color: black;
+    color: $white;
     line-height: 55px;
     margin: 0 15px 0 15px;
     position: absolute;
@@ -40,7 +34,7 @@
       width: 45px;
       height: 45px;
       border-radius: 22.5px;
-      background-color: white;
+      background-color: $white;
       display: flex;
       justify-content: center;
     }
@@ -51,7 +45,7 @@
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: #0271bc;
+    background-color: $menu;
     width: 44px;
     height: 44px;
     cursor: pointer;

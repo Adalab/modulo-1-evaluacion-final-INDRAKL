@@ -1,6 +1,6 @@
 .reasons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   width: 320px;
   height: 624px;
   background-color: $ice-blue;
@@ -14,7 +14,7 @@
   }
 
   &__article {
-    grid-column: span 3;
+    grid-column: 2;
     line-height: 30px;
 
     &__subtitle {
@@ -22,29 +22,23 @@
     }
     &__text {
       font-family: $font-main;
+      text-align: center;
     }
   }
   &__button {
-    grid-column: span 3;
-    display: flex;
+    grid-column: 2;
     justify-content: center;
+    height: 35px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    background-color: $bright-orange;
+    border-radius: 22.5px;
+    font-family: $font-medium;
 
-    &__details {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &__link {
       color: $white;
-      background-color: $bright-orange;
-      border-radius: 22.5px;
-      width: 180px;
-      height: 45px;
-      font-size: 20px;
-      font-family: $font-medium;
-
-      &__link {
-        color: $white;
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
   }
 }

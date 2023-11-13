@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin: 0 auto;
 }
-
 .header {
   text-align: center;
   height: 100vh;
@@ -23,7 +23,6 @@
     line-height: 55px;
     margin: 0 15px 0 15px;
     position: absolute;
-    z-index: 2;
 
     &__paragraph {
       font-family: $font-main;
@@ -31,25 +30,23 @@
     }
 
     &__icon {
-      position: relative;
       width: 45px;
       height: 45px;
       border-radius: 22.5px;
       background-color: $white;
       display: flex;
       justify-content: center;
+      align-items: center;
     }
   }
 
   &__menu {
     position: fixed;
-    z-index: 2;
     top: 0;
     left: 0;
     background-color: $menu;
     width: 44px;
     height: 44px;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;

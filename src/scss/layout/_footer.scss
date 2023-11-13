@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +20,7 @@
     background-color: $white;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   &__menu {
@@ -67,29 +69,30 @@
     width: 768px;
     height: 240px;
     display: flex;
-    text-align: left;
-    // flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
+    justify-content: flex-start;
 
     &__icon {
-      top: -80px;
-      justify-content: center;
+      justify-self: center;
     }
 
     &__menu {
+      text-align: left;
       order: 3;
-    }
 
-    &__articles {
-      order: 2;
-    }
+      &__articles {
+        margin-top: 60px;
+      }
 
-    &__ssnn {
-      flex: 1;
-      order: 4;
-    }
-    &__bottom {
-      order: 1;
+      &__ssnn {
+        flex: 1;
+        order: 4;
+      }
+      &__bottom {
+        align-items: flex-start;
+        order: 1;
+      }
     }
   }
 }
@@ -102,5 +105,9 @@
     display: flex;
     margin: 0 auto;
     box-sizing: border-box;
+
+    &__menu {
+      align-items: center;
+    }
   }
 }

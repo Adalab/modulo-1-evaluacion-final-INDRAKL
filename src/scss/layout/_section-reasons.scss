@@ -1,4 +1,5 @@
 .reasons {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   width: 320px;
@@ -28,6 +29,7 @@
   &__button {
     grid-column: 2;
     justify-content: center;
+    justify-self: center;
     height: 35px;
     width: 180px;
     display: flex;

@@ -35,10 +35,14 @@
     background-color: $bright-orange;
     border-radius: 22.5px;
     font-family: $font-medium;
+    transition: background-color 0.3s;
 
     &__link {
       color: $white;
       text-decoration: none;
+    }
+    &:hover {
+      background-color: lighten($bright-orange, 30%);
     }
   }
 }

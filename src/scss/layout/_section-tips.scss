@@ -37,10 +37,14 @@
     display: flex;
     justify-content: center;
     font-family: $font-medium;
+    transition: background-color 0.3s;
 
     &__text {
       text-decoration: none;
       color: $bright-orange;
+    }
+    &:hover {
+      background-color: lighten($bright-orange, 30%);
     }
   }
 }

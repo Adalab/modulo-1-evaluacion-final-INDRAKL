@@ -12,7 +12,7 @@
 
   &__icon {
     position: relative;
-    top: -50px;
+    top: -40px;
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
@@ -45,7 +45,62 @@
     }
   }
   &__bottom {
-    font-size: 14px;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &__copy {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 768px;
+    height: 240px;
+    display: flex;
+    text-align: left;
+    // flex-direction: column;
+    box-sizing: border-box;
+
+    &__icon {
+      top: -80px;
+      justify-content: center;
+    }
+
+    &__menu {
+      order: 3;
+    }
+
+    &__articles {
+      order: 2;
+    }
+
+    &__ssnn {
+      flex: 1;
+      order: 4;
+    }
+    &__bottom {
+      order: 1;
+    }
+  }
+}
+
+// *desktop*
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }

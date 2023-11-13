@@ -42,3 +42,49 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 768px;
+    height: 330px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__article {
+      grid-column: span 1;
+    }
+  }
+}
+
+// *desktop*
+
+@media (min-width: 1280px) {
+  .reasons {
+    width: 1280px;
+    height: 427px;
+    align-items: center;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__article {
+      &__subtitle {
+        font-size: 24px;
+      }
+      &__text {
+        font-size: 20px;
+      }
+    }
+    &__button {
+      font-size: 20px;
+      width: 255px;
+      height: 45px;
+      grid-column: 2/3;
+      justify-self: center;
+    }
+  }
+}

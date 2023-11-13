@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 .header {
   text-align: center;
@@ -10,13 +9,14 @@
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 284px;
+    top: 350px;
     font-size: 42px;
     font-family: $font-bold;
     color: $white;
@@ -32,11 +32,16 @@
     &__icon {
       width: 45px;
       height: 45px;
-      border-radius: 22.5px;
+      border-radius: 50%;
       background-color: $white;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &__img {
+        position: relative;
+        top: -7px;
+      }
     }
   }
 
@@ -62,6 +67,27 @@
     margin: 0 auto;
     box-sizing: border-box;
     justify-content: center;
+
+    &__text {
+      font-size: 80px;
+      line-height: 106px;
+      padding: 60px;
+      top: 200px;
+
+      &__paragraph {
+        font-size: 24px;
+        margin-top: -40px;
+      }
+
+      &__icon {
+        &__img {
+          top: -20px;
+        }
+      }
+    }
+    &__menu {
+      align-content: flex-start;
+    }
   }
 }
 
@@ -75,13 +101,20 @@
     box-sizing: border-box;
 
     &__text {
-      margin: 100px 275px 275px;
+      margin: 180px 275px 0px 275px;
       font-size: 100px;
       line-height: 132px;
+      padding: 0;
+      top: 300px;
 
       &__paragraph {
         font-size: 24px;
         margin-top: -40px;
+      }
+      &__icon {
+        &__img {
+          top: -30px;
+        }
       }
     }
   }

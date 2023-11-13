@@ -13,7 +13,7 @@
 
   &__icon {
     position: relative;
-    top: -40px;
+    top: -80px;
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
@@ -23,43 +23,31 @@
     align-items: center;
   }
 
-  &__menu {
+  &__aside {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    width: 73px;
-    height: 150px;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 30px;
 
-    &__link {
-      color: $white;
-      text-decoration: none;
+    &__menu {
+      &__link {
+        color: $white;
+        text-decoration: none;
+      }
+      &__articles {
+        margin-top: -50px;
+        list-style: none;
+      }
+      &__ssnn {
+        list-style: none;
+        margin-top: 30px;
+      }
     }
-
-    &__articles {
-      list-style: none;
-    }
-
-    &__ssnn {
-      list-style: none;
-    }
-  }
-  &__bottom {
-    display: flex;
-    flex-direction: column;
-
-    &__copy {
-      display: flex;
-      justify-content: center;
-    }
-
-    &__icon {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 40px;
-      padding-top: 10px;
+    &__bottom {
+      margin-top: 30px;
     }
   }
 }
@@ -68,30 +56,35 @@
   .footer {
     width: 768px;
     height: 240px;
-    display: flex;
-    align-items: center;
     box-sizing: border-box;
-    justify-content: flex-start;
+    display: flex;
 
     &__icon {
-      justify-self: center;
+      top: -40px;
     }
+    &__aside {
+      flex-direction: row;
+      margin-left: 40px;
+      align-items: first baseline;
+      gap: 200px;
+      // justify-content: center;
+      // justify-items: center;
 
-    &__menu {
-      text-align: left;
-      order: 3;
-
-      &__articles {
-        margin-top: 60px;
-      }
-
-      &__ssnn {
-        flex: 1;
-        order: 4;
+      &__menu {
+        display: flex;
+        &__articles {
+          order: 2;
+          margin: 0;
+        }
+        &__ssnn {
+          order: 3;
+          margin: 0;
+        }
       }
       &__bottom {
-        align-items: flex-start;
+        margin: 0;
         order: 1;
+        text-align: left;
       }
     }
   }
@@ -99,15 +92,11 @@
 
 // *desktop*
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .footer {
     width: 1280px;
-    display: flex;
     margin: 0 auto;
     box-sizing: border-box;
-
-    &__menu {
-      align-items: center;
-    }
+    display: flex;
   }
 }

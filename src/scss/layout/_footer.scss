@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  width: 100%;
   height: 465px;
   color: $white;
   background-color: $dark-grey-blue;
@@ -25,10 +25,8 @@
 
   &__aside {
     display: flex;
-    align-items: center;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
     font-size: 16px;
     line-height: 30px;
 
@@ -54,36 +52,35 @@
 
 @media (min-width: 768px) {
   .footer {
-    width: 768px;
+    width: 100%;
     height: 240px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
     display: flex;
 
     &__icon {
-      top: -40px;
+      margin-left: 362px;
+      margin-right: 361px;
+      top: -20px;
     }
-    &__aside {
-      flex-direction: row;
-      margin-left: 40px;
-      align-items: first baseline;
-      gap: 200px;
-      // justify-content: center;
-      // justify-items: center;
 
+    &__aside {
+      flex-direction: row-reverse;
+      align-items: first baseline;
+      justify-content: space-around;
+      margin-bottom: 45px;
+      margin-top: -20px;
       &__menu {
         display: flex;
-        &__articles {
-          order: 2;
-          margin: 0;
-        }
-        &__ssnn {
-          order: 3;
-          margin: 0;
-        }
+        gap: 30px;
+        margin: 0%;
+        text-align: left;
+        align-items: first baseline;
       }
       &__bottom {
-        margin: 0;
-        order: 1;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
         text-align: left;
       }
     }
@@ -94,9 +91,14 @@
 
 @media (min-width: 1280px) {
   .footer {
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
+    &__icon {
+      margin-left: 618px;
+      margin-right: 617px;
+      top: -20px;
+    }
   }
 }

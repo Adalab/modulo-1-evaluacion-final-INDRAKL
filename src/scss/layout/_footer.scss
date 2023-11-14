@@ -72,13 +72,13 @@
       margin-top: -20px;
       &__menu {
         display: flex;
-        gap: 30px;
-        margin: 0%;
+        gap: 190px;
+        margin-right: 39px;
         text-align: left;
         align-items: first baseline;
       }
       &__bottom {
-        margin-right: 30px;
+        margin-right: 110px;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -92,13 +92,23 @@
 @media (min-width: 1280px) {
   .footer {
     width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
+
     &__icon {
       margin-left: 618px;
       margin-right: 617px;
       top: -20px;
+    }
+
+    &__aside {
+      &__menu {
+        margin: 0;
+        gap: 120px;
+      }
+      &__bottom {
+        margin-right: 60px;
+      }
     }
   }
 }
